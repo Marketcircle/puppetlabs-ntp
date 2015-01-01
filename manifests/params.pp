@@ -113,9 +113,9 @@ class ntp::params {
       ]
     }
     'FreeBSD': {
-      $config          = $default_config
+      $config          = '/usr/local/etc/ntp.conf'
       $driftfile       = '/var/db/ntpd.drift'
-      $keys_file       = $default_keys_file
+      $keys_file       = '/usr/local/etc/ntp/keys'
       $package_name    = ['net/ntp']
       $restrict        = [
         'default kod nomodify notrap nopeer noquery',
